@@ -2,7 +2,9 @@
 
 // *** Uncomment the lines below to test
 // console.log("%cQuestion 1", "color: red") 
-
+let counter = 1;
+counter =+ 1
+console.log(counter)
 // console.log(counter) 
 // // => 2
 // console.log("%c----------", "color: red") 
@@ -14,6 +16,8 @@
 // *** after testing, comment the line causing the error back in 
 // *** otherwise, the error will stop the rest of your code from running
 // console.log("%cQuestion 2", "color: red") 
+const name = "Joe"
+// name = "Not Joe" should throw TypeError
 
 // console.log(name)
 // // => "Ian"
@@ -28,6 +32,14 @@
 // *** Uncomment the lines below to test
 // console.log("%cQuestion 3", "color: red") 
 
+
+function drinkWater(currentThirstTevel) { 
+  console.log("Man I sure am thirsty")
+  current_thirst_level -= 1
+  console.log("Ahh that hits the spot")
+  current_thirst_level
+}
+
 // console.log(drinkWater(12))
 // // => "Man I sure am thirsty"
 // // => "Ahh that hits the spot"
@@ -37,6 +49,17 @@
 
 
 // ***** Question 4 *****
+
+function sameSameButDifferent(num , maybeNum) {
+  if (num === maybeNum) {
+    return "same same"
+  } else if (num == maybeNum) {
+    return "same same (but different)"
+  } else {
+    return "different"
+  }
+}
+
 
 // *** Uncomment the lines below to test
 // console.log("%cQuestion 4", "color: red") 
@@ -57,6 +80,11 @@
 
 
 // ***** Question 5 *****
+
+function updateGrade(studentObj, grade) {
+  studentObj.grade = grade
+}
+
 
 // *** Uncomment the lines below to test
 // console.log("%cQuestion 5", "color: red")
